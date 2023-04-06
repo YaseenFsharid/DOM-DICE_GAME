@@ -14,12 +14,25 @@ var FirstDiceHandlesource = "./images/dice"+diceFacesForDiceOne+".png";
 // handle the seconed dice number random image
 var SeconedDiceHAndlesource = "./images/dice"+diceFacesForDiceTow+".png";
 
-var RandomImage1 = document.querySelector(".img1")
-.setAttribute("src" , FirstDiceHandlesource);
+document.querySelector(".img1")
+    .setAttribute("src" , FirstDiceHandlesource);
 
-var RandomImage2 = document.querySelector(".img2")
+document.querySelector(".img2")
 .setAttribute("src" , SeconedDiceHAndlesource);
 
+    // know we will make the game procedure 
 
-// know we will make the game procedure 
+  if(RandomNumber1 > RandomNumber2){
+    document.querySelector("h1"). innerHTML = "player one wins " ;
+    
+ }else if(RandomNumber1 < RandomNumber2){
+    document.querySelector("h1"). innerHTML = "player tow wins" ;
+    
+ }else {
+    document.querySelector("h1"). innerHTML = "Drow !" ;
+ }
+
+
+     
+
 
