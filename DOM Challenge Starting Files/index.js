@@ -25,7 +25,7 @@ document.querySelector(".img2")
   if(RandomNumber1 > RandomNumber2){
     document.querySelector("h1"). innerHTML = "player one wins " ;
     
- }else if(RandomNumber1 < RandomNumber2){
+ }else if(RandomNumber2 > RandomNumber1)  {
     document.querySelector("h1"). innerHTML = "player tow wins" ;
     
  }else {
